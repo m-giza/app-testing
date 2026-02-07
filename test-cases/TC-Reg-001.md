@@ -102,6 +102,9 @@ Verify registration behavior with various password inputs.
 4. **Gotowy do automatyzacji:** Struktura jest sekwencyjna.
 
 
-<img width="607" height="858" alt="1" src="https://github.com/user-attachments/assets/b99836d5-4201-40f8-a1dd-0ad5d0be56be" />
-<img width="607" height="795" alt="2" src="https://github.com/user-attachments/assets/12efc94f-e91c-45ff-b897-90202e9fca9b" />
+<img width="607" height="858" alt="tc-reg-001-preview_1 of 2" src="https://github.com/user-attachments/assets/b8d713cc-1f59-4b7a-8d85-92881b939094" />
+<img width="607" height="795" alt="tc-reg-001-preview_2 of 2" src="https://github.com/user-attachments/assets/76444a02-cb8a-4b1a-ab0a-6affb54ae52a" />
+
+
+
 
