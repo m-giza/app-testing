@@ -1,5 +1,3 @@
-# TC-Reg-001: Registration - validate password requirements
-
 ## Metadata
 | Attribute | Value |
 |-----------|-------|
@@ -17,7 +15,7 @@
 | **Milestone** | - |
 
 ## Description
-Verify that user cannot complete registration when password does not meet defined requirements.
+Verify registration behavior with various password inputs.
 
 ## Preconditions
 - Network connection is available.
@@ -50,11 +48,11 @@ Verify that user cannot complete registration when password does not meet define
 ### Step 2.4: Password Field Validation Sequence
 
 #### **Step 2.4.1: Test short password**
-**Action:** Change previously inserted password to a password with 4 letters (e.g., `jnth`).  
+**Action:** Change previously inserted password to a password with 4 letters (e.g. `jnth`).  
 **Expected:** Field accepts input, there is **no error message** (obserwacja: brak walidacji w czasie rzeczywistym).
 
 #### **Step 2.4.2: Test password with special characters**
-**Action:** Delete previously inserted password and change it to a password that contains special characters (e.g., `Jnth@n123`).  
+**Action:** Delete previously inserted password and change it to a password that contains special characters (e.g. `Jnth@n123`).  
 **Expected:** Field accepts input, there is **no error message**.
 
 #### **Step 2.4.3: Test password mismatch in confirmation field**
@@ -101,4 +99,9 @@ Verify that user cannot complete registration when password does not meet define
 1. **Brak walidacji w czasie rzeczywistym:** System nie sprawdza wymagań hasła podczas wpisywania (tylko przy submisie).
 2. **Kolejność kroków ważna:** Child steps (2.4.x) testują różne stany tego samego pola.
 3. **Test pełnego przepływu:** Rejestracja → Logowanie → Wylogowanie.
-4. **Gotowy do automatyzacji:** Struktura jest sekwencyjna i deterministyczna.
+4. **Gotowy do automatyzacji:** Struktura jest sekwencyjna.
+
+
+<img width="607" height="858" alt="1" src="https://github.com/user-attachments/assets/b99836d5-4201-40f8-a1dd-0ad5d0be56be" />
+<img width="607" height="795" alt="2" src="https://github.com/user-attachments/assets/12efc94f-e91c-45ff-b897-90202e9fca9b" />
+
