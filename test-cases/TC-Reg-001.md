@@ -101,8 +101,8 @@ Verify registration behavior with various password inputs.
 3. **Test pełnego przepływu:** Rejestracja → Logowanie → Wylogowanie.
 4. **Gotowy do automatyzacji:** Struktura jest sekwencyjna.
 
-![Page 1](../assets/tc-reg-001-qase-preview-page1)  
-![Page 1](../assets/tc-reg-001-qase-preview-page2)  
+![Page 1](../assets/previews/tc-reg-001-qase-preview-page1)  
+![Page 1](../assets/previews/tc-reg-001-qase-preview-page2)  
 
 
 
