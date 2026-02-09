@@ -1,0 +1,376 @@
+{
+  "info": {
+    "_postman_id": "726e1865-363c-469c-b81d-67056a22ab9e",
+    "name": "ReqRes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45511605"
+  },
+  "item": [
+    {
+      "name": "API INFOS",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const json = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Response should return a 200 status code\", () => {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response is an object\", () => {\r",
+              "    pm.expect(json).to.be.an('object');\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response contains name\", () => {\r",
+              "    pm.expect(json).to.have.property(\"name\")\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Name should not be empty\", () => {\r",
+              "    pm.expect(json.name).to.not.be.empty;\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "console.clear()"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Orders\",\r\n    \"slug\": \"orders\",\r\n    \"project_slug\": \"orders\",\r\n    \"project_id\": \"2921\",\r\n    \"visibility\": \"private\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}api",
+          "host": [
+            "{{baseURL}}api"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get all collections",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Response should return a 200 status code\", () => {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "console.clear()"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Orders\",\r\n    \"slug\": \"orders\",\r\n    \"project_slug\": \"orders\",\r\n    \"project_id\": \"2921\",\r\n    \"visibility\": \"private\"\r\n}"
+        },
+        "url": {
+          "raw": "{{baseURL}}api/collections",
+          "host": [
+            "{{baseURL}}api"
+          ],
+          "path": [
+            "collections"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get single collection",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Response should return a 200 status code\", () => {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "console.clear()"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Orders\",\r\n    \"slug\": \"orders\",\r\n    \"project_slug\": \"orders\",\r\n    \"project_id\": \"2921\",\r\n    \"visibility\": \"private\"\r\n}"
+        },
+        "url": {
+          "raw": "{{baseURL}}api/collections/orders/records",
+          "host": [
+            "{{baseURL}}api"
+          ],
+          "path": [
+            "collections",
+            "orders",
+            "records"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create new record in a collection",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "response = pm.response.json();\r",
+              "\r",
+              "pm.collectionVariables.set(\"recordId\", response.data.id);\r",
+              "\r",
+              "pm.test(\"Response should return a 201 status code\", () => {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response should contain valid ID\", () => {\r",
+              "    const id = response.data.id;\r",
+              "    pm.expect(id).to.eql(pm.collectionVariables.get(\"recordId\"));\r",
+              "    pm.expect(response.data.id).to.be.a(\"string\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Response should contain name and amount\", () => {\r",
+              "    pm.expect(response.data).to.have.property(\"collection_id\");\r",
+              "    pm.expect(response.data).to.have.property(\"project_id\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "console.clear()"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"data\": {\r\n        \"Name\": \"Test\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}api/collections/orders/records/",
+          "host": [
+            "{{baseURL}}api"
+          ],
+          "path": [
+            "collections",
+            "orders",
+            "records",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete record from a collection",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Body is empty\", () => {\r",
+              "    pm.expect(pm.response.text()).to.be.empty;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Status code is 204\", () => {\r",
+              "    pm.response.to.have.status(204);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "console.clear()"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}api/collections/orders/records/{{recordId}}",
+          "host": [
+            "{{baseURL}}api"
+          ],
+          "path": [
+            "collections",
+            "orders",
+            "records",
+            "{{recordId}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": ""
+    },
+    {
+      "key": "recordId",
+      "value": ""
+    },
+    {
+      "key": "api_key",
+      "value": ""
+    }
+  ]
+}
