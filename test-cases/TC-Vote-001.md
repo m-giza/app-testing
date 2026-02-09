@@ -18,7 +18,7 @@
 Verify that the user can vote for a car model, see a confirmation message, and that the vote count is updated correctly.
 
 ## Preconditions
-- Valid user account exists (e.g., login: `JHwell@31`, password: `Jnth@n!23`).
+- Valid user account exists (ex. login: `JHwell@31`, password: `Jnth@n!23`).
 
 ## Postconditions
 - Vote is registered for the selected car model.
