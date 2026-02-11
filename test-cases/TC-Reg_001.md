@@ -35,3 +35,5 @@ Verify that registration is blocked when password does not meet security require
 ## Postconditions
 - User is **not** registered in the system
 - Registration form remains visible with entered data
+
+![Page 1](../assets/previews/tc-reg-001-qase-preview.png)
