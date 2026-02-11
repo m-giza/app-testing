@@ -14,7 +14,7 @@ Verify that user can successfully log in using credentials from a newly register
 
 **Password requirements:**
 - Minimum length: 6 characters
-- At least 1 special character (!@#$%^&*)
+- At least 1 special character
 - At least 1 uppercase letter
 
 ## Preconditions
