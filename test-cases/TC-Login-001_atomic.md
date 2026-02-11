@@ -30,7 +30,7 @@ Verify that user can successfully log in using credentials from a newly register
 | 2 | Locate login form in top navigation bar (top-right) | Login and Password fields are visible |
 | 3 | Enter registered login: `JHwell@32` | Field accepts input |
 | 4 | Enter registered password: `Jnth@n!23` | Field accepts masked input |
-| 5 | Click "Login" button | ✅ Login form disappears<br>✅ User account menu appears (top-right) |
+| 5 | Click "Login" button |  Login form disappears<br> User account menu appears (top-right) |
 
 ## Postconditions
 - User is successfully logged in
