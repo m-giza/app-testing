@@ -21,7 +21,7 @@ Verify that user session is properly terminated and user is redirected to logged
 
 | # | Action | Expected Result |
 |---|--------|-----------------|
-| 1 | Click "Logout" button in user account menu (top-right) | ✅ User account menu disappears<br>✅ Login form reappears in top navigation |
+| 1 | Click "Logout" button in user account menu (top-right) |  User account menu disappears<br> Login form reappears in top navigation |
 
 ## Postconditions
 - User is successfully logged out
