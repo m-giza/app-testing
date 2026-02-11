@@ -30,7 +30,7 @@ Verify that registration is blocked when password does not meet security require
 | 3 | Enter valid data:<br>• Login: `JHwell@32`<br>• First Name: `Jonathan`<br>• Last Name: `Hwell` | Fields accept input |
 | 4 | Enter weak password: `jnth` | Field accepts input, no real-time validation error |
 | 5 | Enter confirm password: `jnth` | Field accepts input, no error |
-| 6 | Click "Register" button | ❌ Red error message appears indicating password requirements not met |
+| 6 | Click "Register" button | Red error message appears indicating password requirements not met |
 
 ## Postconditions
 - User is **not** registered in the system
