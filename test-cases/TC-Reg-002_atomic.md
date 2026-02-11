@@ -28,8 +28,8 @@ Verify real-time validation of password confirmation field.
 | # | Action | Expected Result |
 |---|--------|-----------------|
 | 1 | Enter valid password: `Jnth@n!23` | Field accepts input, no error |
-| 2 | Enter mismatched password in "Confirm Password": `jOnthn` | ❌ Red error message: "Passwords do not match" |
-| 3 | Correct "Confirm Password" to match original: `Jnth@n!23` | ✅ Error disappears |
+| 2 | Enter mismatched password in "Confirm Password": `jOnthn` |  Red error message: "Passwords do not match" |
+| 3 | Correct "Confirm Password" to match original: `Jnth@n!23` |  Error disappears |
 
 ## Postconditions
 - Registration form remains visible
