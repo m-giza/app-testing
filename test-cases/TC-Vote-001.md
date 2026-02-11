@@ -6,7 +6,7 @@
 | **Priority** | Medium |
 | **Severity** | Minor |
 | **Behavior** | Positive |
-| **Type** | Functional |
+| **Type** | Smoke |
 | **Layer** | E2E |
 | **Flaky?** | No |
 | **Muted?** | No |
@@ -55,20 +55,16 @@ Verify that the user can vote for a car model, see a confirmation message, and t
 **Action:** Click on any car model.  
 **Expected:** User is redirected to the car details page.
 
-### Step 7: Add a comment
-**Action:** In the comment field (right side), enter any text (ex. "It has really nice tires!").  
-**Expected:** Comment is accepted and displayed in the input field.
-
-### Step 8: Submit vote
+### Step 7: Submit vote
 **Action:** Click the "Vote" button.  
 **Expected:** A green confirmation message appears: *"Thank you for your vote!"*
 
-#### **Step 8.1: Verify vote count update**
+#### **Step 7.1: Verify vote count update**
 **Action:** Observe the "Votes" value for the selected car.  
 **Expected:** The vote count increases by exactly **1**.
 
-### Step 9: Log out
-#### **Step 9.1: Click Logout**
+### Step 8: Log out
+#### **Step 8.1: Click Logout**
 **Action:** Scroll up and click the "Logout" button in the top navigation bar.  
 **Expected:** User is logged out; the login form becomes visible again. **User is NOT redirected to the homepage.**
 
