@@ -34,23 +34,28 @@ To moje miejsce na dokumentowanie tego, czego się uczę i jak pracuję jako tes
 
 ## Jak pracuję?
 
-### Testowanie manualne - moja główna siła
+### Testowanie manualne - moje podejście
 
-- **Narzędzia:** Qase.io do organizacji, GitHub do prezentacji
-- **Mój styl:**
-  - Każdy test case ma jeden cel — nie mieszam funkcjonalności
-  - Nie ufam ślepo komunikatom UI — zawsze sprawdzam stan systemu (np. refresh po rejestracji)
-  - Zwracam uwagę na UX issues (np. brak redirectu po rejestracji)
-  - Testy eksploracyjne: W pracy regularnie szukam defektów poza scenariuszami - w portfolio skupiłem się na dokumentowaniu podstaw.
+W codziennej pracy stawiam na **czytelność i precyzję dokumentacji**. W tym portfolio:
+- Każdy test case ma **jeden cel** - nie mieszam rejestracji, logowania i głosowania w jednym scenariuszu.
+- **Nie ufam ślepo komunikatom UI** - zawsze waliduję stan systemu (np. refresh po rejestracji, aby potwierdzić, że konto faktycznie powstało).
+- Zwracam uwagę na **UX issues**, nawet jeśli nie są to błędy funkcjonalne (np. brak redirectu po rejestracji).
 
-### API testing - rozwijam kompetencje
+### API testing - pierwsze publiczne kroki
 
-Moja kolekcja Postman demonstruje:
--  Pełny flow CRUD z dynamicznym chainowaniem (`recordId`)
--  Testy asercji w sekcji "Tests"
--  Obsługę różnych kodów statusu (201, 200, 204)
+Kolekcja Postman (`API-CRUD-Orders`) to moja pierwsza udostępniona praca w tym zakresie. Demonstruje:
+- Flow C-R-D (Create, Read, Delete) na ReqRes API,
+- Dynamiczne chainowanie zmiennych (`recordId`),
+- Proste asercje w sekcji "Tests".
 
-Nie udaję eksperta - to moja pierwsza publiczna kolekcja, ale pokazuje, że rozumiem podstawy integracji API, które wykorzystuję również w prywatnych projektach (m.in Trello, ReqRes).
+To nie jest produkcja - to **dowód zrozumienia podstaw**, które rozwijam dalej.
+
+### Dlaczego te artefakty są „proste”?
+
+Nie pokazuję tu złożonych przypadków z mojej pracy zawodowej (np. eDiscovery, AI modules), ponieważ:
+- Chciałem stworzyć **przejrzysty punkt wejścia** dla rekrutera,
+- Portfolio skupia się na **podstawach testowania manualnego**, które są uniwersalne,
+- Złożone przypadki często zawierają poufne dane - te są **100% publiczne i bezpieczne**.
 
 ---
 
@@ -59,17 +64,6 @@ Nie udaję eksperta - to moja pierwsza publiczna kolekcja, ale pokazuje, że roz
 - Wszystkie dane (`JHwell@32`, `Jnth@n!23`) to fikcyjne konta
 - Checklisty zawierają tylko to, co faktycznie przetestowałem
 - Aplikacja Buggy Cars to oficjalna platforma szkoleniowa
-- Jestem otwarty na naukę automatyzacji testów.
-
-
----
-
-## Kim jestem?
-
-Jestem testerem na etapie **junior+/regular**:
--  Potrafię pisać atomowe test cases z precyzyjnymi expected results
--  Rozumiem potrzebę walidacji poza UI
--  Mam pierwsze doświadczenia z API testing (Postman CRUD flow itp.)
 
 ---
 
