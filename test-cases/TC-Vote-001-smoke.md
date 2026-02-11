@@ -78,5 +78,5 @@ Verify that the user can vote for a car model, see a confirmation message, and t
 3. **Nieoczekiwane zachowanie po logout:** Brak przekierowania na stronę główną — zgodne z obecnym UX aplikacji.
 4. **Gotowy do rozszerzenia:** Można dodać negative case (np. wielokrotne głosowanie).
 
-![Page 1](../assets/previews/tc-vote-001-qase-preview-page1.png)  
-![Page 2](../assets/previews/tc-vote-001-qase-preview-page2.png)
+![Page 1](../assets/previews/tc-vote-001-smoke-qase-preview-page1.png)  
+![Page 2](../assets/previews/tc-vote-001-smoke-qase-preview-page2.png)
