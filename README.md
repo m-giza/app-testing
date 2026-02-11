@@ -24,7 +24,7 @@ To moje miejsce na dokumentowanie tego, czego się uczę i jak pracuję jako tes
 | CL-Reg-001 | Rejestracja użytkownika | ✅ Gotowy |
 | CL-Vote-001 | Głosowanie na samochód | ✅ Gotowy |
 
-### 🔬 API Testing
+### API Testing
 
 | Artefakt | Opis | Status |
 |----------|------|--------|
@@ -32,7 +32,7 @@ To moje miejsce na dokumentowanie tego, czego się uczę i jak pracuję jako tes
 
 ---
 
-## 🛠️ Jak pracuję?
+## Jak pracuję?
 
 ### Testowanie manualne - moja główna siła
 
