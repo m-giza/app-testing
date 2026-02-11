@@ -41,6 +41,7 @@ To moje miejsce na dokumentowanie tego, czego się uczę i jak pracuję jako tes
   - Każdy test case ma jeden cel — nie mieszam funkcjonalności
   - Nie ufam ślepo komunikatom UI — zawsze sprawdzam stan systemu (np. refresh po rejestracji)
   - Zwracam uwagę na UX issues (np. brak redirectu po rejestracji)
+  - Testy eksploracyjne: W pracy regularnie szukam defektów poza scenariuszami - w portfolio skupiłem się na dokumentowaniu podstaw.
 
 ### API testing - rozwijam kompetencje
 
@@ -49,7 +50,7 @@ Moja kolekcja Postman demonstruje:
 -  Testy asercji w sekcji "Tests"
 -  Obsługę różnych kodów statusu (201, 200, 204)
 
-Nie udaję eksperta - posiadam doświadczenie z praktyki na prywatnych kolekcjach (m.in. Trello, ReqRes) 
+Nie udaję eksperta - to moja pierwsza publiczna kolekcja, ale pokazuje, że rozumiem podstawy integracji API, które wykorzystuję również w prywatnych projektach (m.in Trello, ReqRes).
 
 ---
 
@@ -84,4 +85,4 @@ Wszystkie testy, dane, logika i walidacje zostały wykonane **100% przeze mnie**
 
 - **GitHub:** [@m-giza](https://github.com/m-giza)
 
-> Portfolio rozwija się wraz ze mną — planuję dodawać raporty błędów i rozwijać kolekcję Postman. AI zostało wykorzystane do poprawy github syntaxu -> aby pliki były bardziej przejrzyste i github-friendly. Wszelkie testy i kontent zostały wykonane w 100% przeze mnie.
+> Portfolio rozwija się wraz ze mną - planuję dodawać raporty błędów i rozwijać kolekcję Postman.
