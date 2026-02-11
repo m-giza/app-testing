@@ -34,3 +34,5 @@ Verify real-time validation of password confirmation field.
 ## Postconditions
 - Registration form remains visible
 - User is **not** registered in the system
+
+![Page 1](../assets/previews/tc-reg-002-qase-preview.png)
