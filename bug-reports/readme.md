@@ -5,4 +5,4 @@ Planowane:
 - Raport błędu UX (formularz rejestracji pozostaje widoczny po sukcesie)  
 - Raport błędu walidacji hasła  
 
-Ostatnia aktualizacja: 11.02.2026
+Ostatnia aktualizacja: 13.02.2026
