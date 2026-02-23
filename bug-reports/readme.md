@@ -1,8 +1,9 @@
 # Bug Reports
 
-Przykładowe raporty błędów będą dodane wkrótce.  
-Planowane:  
-- Raport błędu UX (formularz rejestracji pozostaje widoczny po sukcesie)  
-- Raport błędu walidacji hasła  
+More bug reports will be added soon.  
 
-Ostatnia aktualizacja: 23.02.2026
+Planned:  
+- UX defect report (registration form remains visible after successful submission)  
+- Password validation defect report
+
+Last updated: 23.02.2026
