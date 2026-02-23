@@ -1,9 +1,10 @@
 # Test Scenarios
 
-Scenariusze testowe (wyższego poziomu niż przypadki testowe) będą dodane wkrótce.  
-Planowane:  
-- ~~Scenariusz rejestracji~~ i głosowania  
-- Scenariusz eksploracyjnego testowania modułu AI
-- Scenariusz upload'owania plików. 
+High-level test scenarios (broader than individual test cases) will be added soon.  
 
-Ostatnia aktualizacja: 13.02.2026
+Plannned:  
+- Registration and voting scenario
+- Exploratory testing scenario for the AI module
+- File upload scenario
+
+Last updated: Februrary 23, 2026
