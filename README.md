@@ -10,19 +10,19 @@ This is where I document my learning process and workflow as a software tester. 
 
 | ID | Name | Type | Status |
 |----|------|------|--------|
-| TC-Reg-001 | Weak password validation | Functional (Negative) | ✅ Ready |
-| TC-Reg-002 | Password mismatch validation | Functional (Negative) | ✅ Ready |
-| TC-Reg-003 | Successful registration | Functional (Positive) | ✅ Ready |
-| TC-Login-001 | Login after registration | Functional (Positive) | ✅ Ready |
-| TC-Logout-001 | Logout | Functional (Positive) | ✅ Ready |
-| TC-Vote-001 | Voting for a car model | Smoke | ✅ Ready |
+| [TC-Reg-001](https://github.com/m-giza/app-testing/blob/main/test-cases/TC-Reg-001_atomic.md) | Weak password validation | Functional (Negative) | ✅ Ready |
+| [TC-Reg-002](https://github.com/m-giza/app-testing/blob/main/test-cases/TC-Reg-002_atomic.md) | Password mismatch validation | Functional (Negative) | ✅ Ready |
+| [TC-Reg-003](https://github.com/m-giza/app-testing/blob/main/test-cases/TC-Reg-003_atomic.md) | Successful registration | Functional (Positive) | ✅ Ready |
+| [TC-Login-001](https://github.com/m-giza/app-testing/blob/main/test-cases/TC-Login-001_atomic.md) | Login after registration | Functional (Positive) | ✅ Ready |
+| [TC-Logout-001](https://github.com/m-giza/app-testing/blob/main/test-cases/TC-Logout-001_atomic.md) | Logout | Functional (Positive) | ✅ Ready |
+| [TC-Vote-001](https://github.com/m-giza/app-testing/blob/main/test-cases/TC-Vote-001_smoke.md) | Voting for a car model | Smoke | ✅ Ready |
 
 ###  Checklists
 
 | ID | Scope | Status |
 |----|--------|--------|
-| CL-Reg-001 | User registration | ✅ Ready |
-| CL-Vote-001 | Car voting | ✅ Ready |
+| [CL-Reg-001](https://github.com/m-giza/app-testing/blob/main/checklists/CL-Reg.md) | User registration | ✅ Ready |
+| [CL-Vote-001](https://github.com/m-giza/app-testing/blob/main/checklists/CL-Vote.md) | Car voting | ✅ Ready |
 
 ### API Testing
 
