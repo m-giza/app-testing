@@ -1,82 +1,100 @@
-#  Moje portfolio testowe
+#  My Testing Portfolio
 
-To moje miejsce na dokumentowanie tego, czego się uczę i jak pracuję jako tester oprogramowania. Wszystkie przypadki testowe zostały ręcznie wykonane na demo aplikacji [Buggy Cars Rating](https://buggy.justtestit.org/) - darmowej platformie szkoleniowej dla QA.
+This is where I document my learning process and workflow as a software tester. All test cases were manually executed on the [Buggy Cars Rating](https://buggy.justtestit.org/) demo application.
 
 ---
 
-## Co tutaj znajdziesz?
+## What will you find here?
 
-###  Test Cases (Manualne)
+###  Manual Test Cases
 
-| ID | Nazwa | Typ | Status |
-|----|-------|-----|--------|
-| TC-Reg-001 | Walidacja słabego hasła | Functional (Negative) | ✅ Gotowy |
-| TC-Reg-002 | Walidacja niezgodności haseł | Functional (Negative) | ✅ Gotowy |
-| TC-Reg-003 | Udana rejestracja | Functional (Positive) | ✅ Gotowy |
-| TC-Login-001 | Logowanie po rejestracji | Functional (Positive) | ✅ Gotowy |
-| TC-Logout-001 | Wylogowanie | Functional (Positive) | ✅ Gotowy |
-| TC-Vote-001 | Głosowanie na model samochodu | Smoke | ✅ Gotowy |
+| ID | Name | Type | Status |
+|----|------|------|--------|
+| TC-Reg-001 | Weak password validation | Functional (Negative) | ✅ Ready |
+| TC-Reg-002 | Password mismatch validation | Functional (Negative) | ✅ Ready |
+| TC-Reg-003 | Successful registration | Functional (Positive) | ✅ Ready |
+| TC-Login-001 | Login after registration | Functional (Positive) | ✅ Ready |
+| TC-Logout-001 | Logout | Functional (Positive) | ✅ Ready |
+| TC-Vote-001 | Voting for a car model | Smoke | ✅ Ready |
 
-###  Checklisty
+###  Checklists
 
-| ID | Zakres | Status |
+| ID | Scope | Status |
 |----|--------|--------|
-| CL-Reg-001 | Rejestracja użytkownika | ✅ Gotowy |
-| CL-Vote-001 | Głosowanie na samochód | ✅ Gotowy |
+| CL-Reg-001 | User registration | ✅ Ready |
+| CL-Vote-001 | Car voting | ✅ Ready |
 
 ### API Testing
 
-| Artefakt | Opis | Status |
-|----------|------|--------|
-| [`API-CRUD-Orders.postman_collection.json`](assets/API-CRUD-Orders.postman_collection.json) | Pełny flow CRUD na ResReq API:<br>• POST → extract ID → GET → DELETE<br>• Asertywy w testach<br>• Dynamiczne zmienne środowiskowe | ✅ Gotowy |
+| Artefact | Description | Status |
+|----------|-------------|--------|
+| [`API-CRUD-Orders.postman_collection.json`](assets/API-CRUD-Orders.postman_collection.json) | CRUD flow on ReqRes API:<br>• POST → extract ID → GET → DELETE<br>• Assertions in tests<br>• Dynamic environment variables | ✅ Ready |
+
+### Bug Reports
+
+Sanitized examples demonstrating my approach to defect reporting.
+
+| ID | Component | Issue Summary | Severity | Status |
+|----|-----------|---------------|----------|--------|
+| [AI-RED-047](https://github.com/m-giza/app-testing/blob/main/bug-reports/bug-report-critical-ai.md) | AI Redaction Module | False negative on PESEL detection in merged table cells | High | Open |
+| [FUNC-SEARCH-033](https://github.com/m-giza/app-testing/blob/main/bug-reports/bug-report-search-func.md) | Search / Document Viewer | Metadata inconsistency between docked and undocked views | High | Open |
+
+### Tools & Environment (used in this repository)
+
+- Chrome DevTools (network inspection, console validation)
+- Postman (REST API testing, collection variables)
+- JavaScript assertions (response validation in Postman)
+- Git (version control)
+- GitHub (documentation & repository management)
 
 ---
 
-## Jak pracuję?
+## My Workflow
 
-### Testowanie manualne - moje podejście
+### Manual Testing Approach
 
-W codziennej pracy stawiam na **czytelność i precyzję dokumentacji**. W tym portfolio:
-- Każdy test case ma **jeden cel** - nie mieszam rejestracji, logowania i głosowania w jednym scenariuszu.
-- **Nie ufam ślepo komunikatom UI** - zawsze waliduję stan systemu (np. refresh po rejestracji, aby potwierdzić, że konto faktycznie powstało).
-- Zwracam uwagę na **UX issues**, nawet jeśli nie są to błędy funkcjonalne (np. brak redirectu po rejestracji).
+In my daily work, I prioritize **clarity and precision in documentation**. In this portfolio:
+- Each test has **a single objective** - I do not combine registration, login, and voting into one scenario.
+- **I do not rely solely on UI messages** - I always validate the system state (e.g., refreshing after registration to confirm the account was actually created).
+- I pay attention to **UX issues**, even if they are not functional bugs (e.g., missing redirect after registration).
 
-### API testing - pierwsze publiczne kroki
+### API Testing Approach
 
-Kolekcja Postman (`API-CRUD-Orders`) to moja pierwsza udostępniona praca w tym zakresie. Demonstruje:
-- Flow C-R-D (Create, Read, Delete) na ReqRes API,
-- Dynamiczne chainowanie zmiennych (`recordId`),
-- Proste asercje w sekcji "Tests".
+The Postman collection (`API-CRUD-Orders`) is my first publicly shared work in this area. It demonstrates:
+- C-R-D flow (Create, Read, Delete) on ReqRes API,
+- Dynamic variable chaining (`recordId`),
+- Basic assertions in the "Tests" section.
 
-To nie jest produkcja - to **dowód zrozumienia podstaw**, które rozwijam dalej.
+This collection demonstrates foundational REST API testing practices and structured request chaining.
 
-### Dlaczego te artefakty są „proste”?
+### Why are these artifacts simple?
 
-Nie pokazuję tu złożonych przypadków z mojej pracy zawodowej (np. eDiscovery, AI modules), ponieważ:
-- Chciałem stworzyć **przejrzysty punkt wejścia** dla rekrutera,
-- Portfolio skupia się na **podstawach testowania manualnego**, które są uniwersalne,
-- Złożone przypadki często zawierają poufne dane - te są **100% publiczne i bezpieczne**.
-
----
-
-## Ważne uwagi
-
-- Wszystkie dane (`JHwell@32`, `Jnth@n!23`) to fikcyjne konta
-- Checklisty zawierają tylko to, co faktycznie przetestowałem
-- Aplikacja Buggy Cars to oficjalna platforma szkoleniowa
+I am not including complex cases from my professional work (e.g., eDiscovery, AI modules) because:
+- I wanted to create a **clear entry point** for recruiters,
+- This portfolio focuses on **manual testing fundamentals**, which are universal,
+- Complex cases often contain confidential data - these are **100% public and safe**.
 
 ---
 
-## Użycie sztucznej inteligencji
+## Important Notes
 
-AI zostało wykorzystane wyłącznie do:
-- Poprawy formatowania plików `.md` (GitHub syntax, tabele, nagłówki)
-- Wygładzenia języka w opisach (bez zmiany treści)
+- All credentials (`JHwell@32`, `Jnth@n!23`) are fictional test accounts
+- Checklists only include what I have actually tested
+- Buggy Cars is an official training platform
 
-Wszystkie testy, dane, logika i walidacje zostały wykonane **100% przeze mnie**.
 ---
-## Kontakt
+
+## Use of Artificial Intelligence
+
+AI was used exclusively for:
+- Improving formatting of `.md` files (GitHub syntax, tables, headers)
+- Refining language in descriptions (without altering technical content)
+
+**All tests, data, logic, and validations were executed 100% by me.**
+
+---
+## Contact
 
 - **GitHub:** [@m-giza](https://github.com/m-giza)
 
-> Portfolio rozwija się wraz ze mną - planuję dodawać raporty błędów i rozwijać kolekcję Postman.
+> This portfolio is actively maintained. Planned additions: extended Postman collections and Playwright scripts. Last updated: February 23, 2026
