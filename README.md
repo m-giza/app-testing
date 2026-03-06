@@ -97,4 +97,4 @@ AI was used exclusively for:
 
 - **GitHub:** [@m-giza](https://github.com/m-giza)
 
-> This portfolio is actively maintained. Planned additions: extended Postman collections and Playwright scripts. Last updated: February 23, 2026
+> This portfolio is actively maintained. Planned additions: extended Postman collections and Playwright scripts. Last updated: March 06, 2026
