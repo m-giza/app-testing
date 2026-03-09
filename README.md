@@ -1,6 +1,6 @@
 #  My Testing Portfolio
 
-This is where I document my learning process and workflow as a software tester. All test cases were manually executed on the [Buggy Cars Rating](https://buggy.justtestit.org/) demo application.
+This is where I document my learning process and workflow as a software tester. All test cases were manually executed on the [Buggy Cars Rating](https://buggy.justtestit.org/) demo application chosen for its simplicity and safe environment, allowing me to focus on developing testing skills and practicing proper test documentation without affecting production systems.
 
 ---
 
