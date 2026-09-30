@@ -7,4 +7,4 @@ Plannned:
 - ~~Exploratory testing scenario for the AI module~~
 - File upload scenario
 
-Last updated: March 09, 2026
+Last updated: 30/09/2026
