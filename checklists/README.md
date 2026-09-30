@@ -11,6 +11,3 @@ This folder contains executable test checklists for key features of the **Buggy 
 ## Reference
 - Application: [Buggy Cars Rating](https://buggy.justtestit.org/)
 - All checklists reference related Test Cases and Scenarios for traceability
-
-## Note
-Checklists are designed for quick execution and regression verification.
