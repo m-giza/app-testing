@@ -6,4 +6,4 @@ Planned:
 - UX defect report (registration form remains visible after successful submission)  
 - Password validation defect report
 
-Last updated: 23.02.2026
+Last updated: 30/09/2026
